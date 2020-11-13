@@ -5,7 +5,7 @@
         <div class="d-flex align-items-center">
             <div class="site-logo">
                 <a href="{% url 'home' %}" class="d-block">
-                <img src="{% static 'images/onlinecourselogo1.jpg' %}" alt="Image" class="img-fluid">
+                <img src="{% static 'images/onlinecourselogo1.png' %}" alt="Image" class="img-fluid">
             <div class="mr-auto">
                 <nav class="site-navigation position-relative text-right" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
@@ -23,7 +23,7 @@
                   <a href="admissions.html" class="nav-link text-left">Admissions</a>
                 </li>
                 <li>
-                  <a href="courses.html" class="nav-link text-left">Courses</a>
+                  <a href="{% url 'courses' %}" class="nav-link text-left">Courses</a>
                 </li>
                 <li>
                     <a href="contact.html" class="nav-link text-left">Contact</a>
