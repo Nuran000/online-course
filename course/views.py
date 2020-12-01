@@ -11,3 +11,10 @@ def courses(request):
         'courses':courses
     }
     return render(request,'course/course.html',context)
+
+def course_video(request,id):
+    course = Course.objects.get(id=id)
+    context={
+        'course_video': course
+    }
+    return render(request,'course/course_videos.html',context)
